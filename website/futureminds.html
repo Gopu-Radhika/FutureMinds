@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Minds | Bridge the Skills Gap</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and styling for the entire page */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .gradient-text {
+            /* Text gradient for a modern "Future" look */
+            background-image: linear-gradient(90deg, #10b981, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex-shrink-0 text-2xl font-bold text-gray-900">
+                    Future <span class="gradient-text">Minds</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#features" class="text-gray-600 hover:text-cyan-600 transition duration-150">Programs</a>
+                    <a href="#mentorship" class="text-gray-600 hover:text-cyan-600 transition duration-150">Mentors</a>
+                    <a href="#contact" class="text-gray-600 hover:text-cyan-600 transition duration-150">Contact</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="hidden md:block px-4 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition duration-150 shadow-lg">
+                        Sign In
+                    </button>
+                    <!-- Mobile Menu Button (Hamburger) -->
+                    <button class="md:hidden p-2 text-gray-500 hover:text-cyan-600 focus:outline-none">
+                        <!-- Icon from Lucide: Menu -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section: Unique Value Proposition Upfront -->
+    <header class="pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter mb-4">
+                Bridge the <span class="gradient-text">Skills Gap.</span> <br class="hidden sm:inline"> Land Your Dream Job.
+            </h1>
+            <!-- Subtitle/Problem Statement -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                Feeling overwhelmed by the skills gap when it comes to landing your dream job? As a student or early-career professional, knowing where to focus your time and energy can be tough.
+            </p>
+            <!-- Main CTA -->
+            <a href="#cta-section" class="cta-button inline-block px-12 py-4 bg-cyan-600 text-white text-lg font-bold rounded-xl shadow-xl hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300 transform transition duration-300">
+                Explore Programs
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Without the guesswork.</p>
+        </div>
+    </header>
+
+    <!-- 2. Features/How It Works Section -->
+    <section id="features" class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-16">
+                Get Job-Ready Faster, Powered by Future Minds
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Feature 1: AI-Powered Platform -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-cyan-500 flex flex-col items-center text-center">
+                    <div class="mb-4 p-4 bg-cyan-100 rounded-full">
+                        <!-- Icon: AI/Brain from Lucide -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 0 0 9-9c0-6.27-4-8-9-8s-9 1.73-9 8a9 9 0 0 0 9 9Z"></path><path d="M8 10h.01"></path><path d="M16 10h.01"></path><path d="M10 14c.31.78 1.05 1.48 2 1.48s1.69-.7 2-1.48"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI-Powered Roadmaps</h3>
+                    <p class="text-gray-600">Our platform uses AI to analyze the current job market and tailor a learning path specifically to your career goals, eliminating the guesswork.</p>
+                </div>
+
+                <!-- Feature 2: Hands-On Projects -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500 flex flex-col items-center text-center">
+                    <div class="mb-4 p-4 bg-green-100 rounded-full">
+                        <!-- Icon: Code/Projects from Lucide -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Industry-Relevant Projects</h3>
+                    <p class="text-gray-600">Master coding, data analysis, and soft skills through hands-on projects that you can showcase directly to potential employers to stand out.</p>
+                </div>
+
+                <!-- Feature 3: Mentorship -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-indigo-500 flex flex-col items-center text-center">
+                    <div class="mb-4 p-4 bg-indigo-100 rounded-full">
+                        <!-- Icon: Users/Mentorship from Lucide -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Mentorship</h3>
+                    <p class="text-gray-600">Access personalized guidance and feedback from industry leaders who help you build confidence and navigate the career landscape.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Final Call to Action Section -->
+    <section id="cta-section" class="py-20 lg:py-28 bg-cyan-700 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+                Ready to take the next step in your career?
+            </h2>
+            <p class="text-xl mb-10 opacity-90">
+                We help you build confidence, stand out to employers, and get job-ready faster—without the guesswork.
+            </p>
+            <!-- CTA Button (Repeat for conversion) -->
+            <a href="#" class="cta-button inline-block px-12 py-4 bg-white text-cyan-700 text-lg font-bold rounded-xl shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white transform transition duration-300">
+                Explore Our Programs Now
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. Footer & Contact Information -->
+    <footer id="contact" class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                
+                <!-- Brand Info -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Future Minds</h3>
+                    <p class="text-sm">Empowering students and early-career pros to master in-demand skills and land their dream job.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-cyan-500 transition duration-150">Programs</a></li>
+                        <li><a href="#mentorship" class="hover:text-cyan-500 transition duration-150">Mentors</a></li>
+                        <li><a href="#" class="hover:text-cyan-500 transition duration-150">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <p class="text-sm">Email: <a href="mailto:hello@futureminds.co" class="hover:text-cyan-500">hello@futureminds.co</a></p>
+                    <p class="text-sm mt-1">Phone: +1 (555) 123-4567</p>
+                </div>
+
+                <!-- Social Media Mockup -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <!-- Mockup Icons (using simple SVG for placeholders) -->
+                        <a href="#" class="hover:text-cyan-500 transition duration-150">
+                            <!-- Icon: LinkedIn -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="hover:text-cyan-500 transition duration-150">
+                            <!-- Icon: Twitter/X -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-19 11.5 1.5.2 2.9.4 4.1.4H2c1.4.9 3.2 1.2 5.2 1.2 7.4 0 13.5-5.3 14.2-12.7.2-1.3-.4-2.4-1.2-3.4z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm">&copy; 2025 Future Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
